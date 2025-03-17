@@ -1,5 +1,8 @@
 # slaMDown
- A simple, local markdown presenter.
+ A simple, local markdown presenter. I named this slaMDown out of a bit of frustration with not 
+ being able to quickly render local markdown from a directory and step through all of those files
+ quickly. There are solutions to this, but I took it as an opportunity to build a small tool for
+ myself.
 
  ## TODO:
  - [ ] create basic cli that will accept a filepath
