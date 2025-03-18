@@ -6,7 +6,7 @@
 
  ## TODO:
  - [x] create basic cli that will accept filepath(s)
- - [ ] given a file path, list back the markdown files that we will present
+ - [x] given a file path, list back the markdown files that we will present
  - [ ] given a list of markdown files, create web server and serve those files
 
 ## Future Thoughts
