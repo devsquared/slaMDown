@@ -8,6 +8,9 @@
  - [x] create basic cli that will accept filepath(s)
  - [x] given a file path, list back the markdown files that we will present
  - [ ] given a list of markdown files, create web server and serve those files
+    - [ ] first spin up a web server
+    - [ ] spin up pages for each found md with a link from there file path relative to the serarch directory?
+    - [ ] clean up the list of pages and display a proper directory structure?
 
 ## Future Thoughts
 - Present rendered markdown in the terminal; TUI?
