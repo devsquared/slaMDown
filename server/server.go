@@ -13,6 +13,7 @@ import (
 func NewServer(ctx context.Context) error { //TODO: just throw the debug flag into a context and other needed info. Then pass that here.
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /", IndexHandler())
+	mux.HandleFunc("GET /file/{slug}", PostHandler())
 
 	debug, ok := util.GetDebugContextKey(ctx)
 	if !ok {
@@ -36,6 +37,15 @@ func NewServer(ctx context.Context) error { //TODO: just throw the debug flag in
 
 func IndexHandler() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
+		// TODO: here we will want to display all possible files to display
 		w.Write([]byte("Well hello there!"))
+	}
+}
+
+func PostHandler() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		//TODO: render over a file for viewing
+		slug := r.PathValue("slug")
+		w.Write([]byte(slug))
 	}
 }
